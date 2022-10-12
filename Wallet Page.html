@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Wallet</title>
+  <!-- linked script.js/style.css/bulma files -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+
+  
+  <body>
+    <!-- **** Wallet Header -->
+    <div id="wallet" class="hero is-halfheight"> 
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-1 is-family-monospace">myWallet</h1>
+          <button id="plusButton" type="button">
+          +</button>
+          <p class="subtitle is-size-3 is-family-monospace">Current Total:</p>
+          <input id="currentInput" class="input is-focused is-family-monospace" type="text" placeholder="Enter Current Amount">
+          <progress id="totalBar" class="progress is-medium is-success mt-6 has-background-white" value="0" max="100">10%</progress>
+        </div>
+      </div>  
+    </div>
+  <!-- **** -->
+
+
+  <!-- Overall div that the cards are concatenated to --> 
+  <div class="order">
+
+
+   <div id="editCard" class="cardx">
+
+      <p>Category: </p>
+        <input
+          id="categoryInput"
+          class="input is-primary is-normal"
+          type="text"
+          placeholder="What is this budget for?"
+        />
+
+      <p>Budget: </p>
+        <input
+          id="budgetInput"
+          class="input is-primary is-normal"
+          type="number"
+          placeholder="How much is your budget?"
+        />
+
+    
+      <button id="submitButton">Submit</button>
+      </div> -->
+
+    
+<!--     <div id="presentCard" class="cardx hidden">
+      <p id="category" class="title is-3">Groceries </p>
+      <p id="budget" class="title is-4">Your Budget: $500 </p>
+      <p class="title is-4">Amount left: $150  </p>
+
+       <input
+          id="investedAmount"
+          class="input is-primary is-normal"
+          type="number"
+          placeholder="Enter Amount Invested"
+        />
+
+      <button id="editButton">Edit</button>
+      </div> -->
+
+  
+  </div>
+
+
+
+
+
+
+    
+<!-- PAST CODE
+    <section>
+      <div class ="cardRow"
+        
+        <div class="clusterCard">
+          <div style="clear: both">
+            <h3 style="float: left">Category 1</h3>
+            <h3 style="float: right">Amount</h3> 
+          </div>
+          <input
+            id="search1"
+            class="input is-primary is-normal"
+            type="number"
+            placeholder="Insert Amount"
+          />
+          <div style="clear: both">
+            <button style="float: left">Edit</button>
+            <h3 style="float: right">leftOver</h3>
+          </div>
+        </div>  
+        
+        <div class="clusterCard">
+          <div style="clear: both">
+            <h3 style="float: left">Category 2</h3>
+            <h3 style="float: right">Amount</h3> 
+          </div>
+          <input
+            id="search2"
+            class="input is-primary is-normal"
+            type="number"
+            placeholder="Insert Amount"
+          />
+          <div style="clear: both">
+            <button style="float: left">Edit</button>
+            <h3 style="float: right">leftOver</h3>
+          </div>
+        </div> 
+        
+      </div>
+   </section>
+-->
+  
+  </body>
+  <footer id="footer" class="footer">
+      <div class="content has-text-centered">
+      <p class="has-text-black is-family-monospace mt-6">
+        <strong>Digital Wallet</strong> by Devon, Hoor, Jiya, and Maryam, Aug 2022.
+      </p>
+    </div>
+  </footer>
+
+</html>
